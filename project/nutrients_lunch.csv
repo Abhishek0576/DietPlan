@@ -1,0 +1,30 @@
+Food,Measure,Grams,Calories,Protein,Fat,Fiber,Carbs,Category,Consumed by,Age(20-39),Age(40-59),Age(60-more)
+Corn meal,1/2 cup,118,250,7,3,1.6,74,"Breads, cereals, fastfood,grains","underweight, healthy, overweight",yes,yes,yes
+Rice,1/2 cup,150,350,5,3,1.2,154,"Breads, cereals, fastfood,grains","underweight, healthy",yes,yes,yes
+Beans soup,1 cup,125,45,8,5,0.6,30,Soups,"underweight, healthy, overweight",yes,yes,no
+Split-pea soup,1 cup,125,60,8,3,0.5,25,Soups,"underweight, healthy, overweight",yes,no,no
+Tomato soup,1 cup,125,60,6,7,0.5,22,Soups,"underweight, healthy, overweight",yes,yes,no
+Vegetable soup,1 cup,125,40,4,2,0,14,Soups,"underweight, healthy, overweight",yes,yes,no
+Buttermilk,1 cup,125,127,9,5,0,13,Dairy products,"underweight, healthy, overweight",yes,yes,yes
+Hamburger,2 oz.,85,90,10,8,0,0,"Meat, Poultry","underweight, healthy",yes,no,no
+chicken,2 oz.,85,70,12,9,0,0,"Meat, Poultry","underweight, healthy",yes,yes,yes
+Fish sticks fried,5,112,150,19,10,0,8,"Meat, Poultry","underweight, healthy, overweight",yes,yes,no
+Eggs raw,1,100,75,6,6,0,t,Eggs,"underweight, healthy, overweight",yes,yes,yes
+Eggs Scrambled or fried,1,60,110,6,8,0,1,Eggs,"underweight, healthy",yes,yes,no
+Beans,1 cup,125,25,1,t,0.8,6,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Beetroots,1 cup,165,1,12,0,t,0.8,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Broccoli,1 cup,150,45,5,t,1.9,8,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Carrots,1 cup,150,45,1,t,0.9,10,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Cauliflower,1 cup,120,30,3,t,1,6,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Corn,1 ear,100,92,3,1,0.8,21,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Cucumbers,8,50,6,t,0,0.2,1,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Mushrooms canned,4,120,12,2,t,t,4,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Mustard greens,1,140,30,3,t,1.2,6,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+"Fresh, steamed peas",1 cup,100,70,5,t,2.2,12,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+"Potatoes, baked",1 med.,100,100,2,t,0.5,22,Vegetables,"underweight, healthy, overweight",yes,yes,no
+French-fried,10 pieces,60,155,-1,7,0.4,20,Vegetables,"underweight, healthy, overweight",yes,yes,no
+Radishes,5 small,50,10,t,0,0.3,2,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Soyabeans,1 cup,50,70,5,5,3.2,20,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Spinach,1 cup,100,26,3,t,1,3,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+Sweet potatoes,1 med.,55,75,1,1,1,36,Vegetables,"underweight, healthy",yes,yes,no
+Tomatoes,1 cup,240,50,2,t,1,9,Vegetables,"underweight, healthy, overweight",yes,yes,yes

@@ -1,0 +1,18 @@
+Food,Measure,Grams,Calories,Protein,Fat,Fiber,Carbs,Category,Consumed by,,Age(20-39),Age(40-59),Age(60-more)
+Rice,3/4 cup,150,400,12,3,1.2,154,"Breads, cereals, fastfood,grains","underweight, healthy, overweight",,yes,yes,yes
+Chicken,3 oz.,85,185,23,9,0,0,"Meat, Poultry","underweight, healthy",,yes,no,no
+Fish sticks fried,5,112,200,19,10,0,8,"Meat, Poultry","underweight, healthy",,yes,no,no
+Beans,1 cup,125,25,1,t,0.8,6,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Beetroots,1 cup,165,1,12,0,t,0.8,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Broccoli,1 cup,150,45,5,t,1.9,8,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Carrots,1 cup,150,45,1,t,0.9,10,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Cauliflower,1 cup,120,30,3,t,1,6,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Mushrooms canned,4,120,12,2,t,t,4,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Mustard greens,1,140,30,3,t,1.2,6,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Split cooked peas,4 cups,100,115,8,t,0.4,21,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+"Potatoes, baked",1 med.,100,100,2,t,0.5,22,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Potato chips,10,20,110,1,7,t,10,Vegetables,"underweight, healthy",,yes,no,no
+Radishes,5 small,50,10,t,0,0.3,2,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Soyabeans,1 cup,200,260,22,11,3.2,20,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Spinach,1 cup,100,26,3,t,1,3,Vegetables,"underweight, healthy, overweight",,yes,yes,yes
+Ice cream,1 cup,150,125,0,0,5,0,"Desserts, sweets","underweight, healthy",,yes,yes,yes
