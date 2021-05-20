@@ -1,8 +1,8 @@
 Application Screens Images:
 
-<img src="images/image1.jpg" height='300'>
-<img src="images/image2.jpg" height='300'>
-<img src="images/image3.jpg" height='300'>
+<img src="images/image1.jpg" height='800'>
+<img src="images/image2.jpg" height='800'>
+<img src="images/image3.jpg" height='800'>
 <img src="images/image4.jpg" height='300'>
 <img src="images/image5.jpg" height='300'>
 <img src="images/image6.jpg" height='300'>
