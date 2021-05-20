@@ -7,7 +7,7 @@
 4. The user can also get the veg and non veg diet plan separately. 
 
 
-# Guidelines:
+## Guidelines:
 1. In the projectDietPlan folder you can find the source code written in python and php 
    a) python code - dietplanx.py
    b) php code -  index.php
