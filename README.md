@@ -1,4 +1,4 @@
-# Project Description:
+## Project Description:
 1. This application takes 5 inputs - age, gender, height, weight and activity level of an individual.
 2. Based on above paramaters it makes two calculations - 
      a) BMI (output - personality level) 
@@ -17,7 +17,7 @@
       to 'http://localhost/projectDietPlan/index.php'
 
 
-# Application Screenshots:
+## Application Screenshots:
 
 <div style="float:left; margin: auto; width: 100%;">
 <img src="images/image1.jpg" height='525'>
