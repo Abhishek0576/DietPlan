@@ -3,10 +3,10 @@ import sys
 import json
 import random
 
-ageGroup = sys.argv[1]
-wtGroup = sys.argv[2]
-cal = float(sys.argv[3])
-foodtype = sys.argv[4]
+ageGroup = "AgeGroup-1(20-39)"
+wtGroup = "Normal"
+cal = 1900
+foodtype = "veg"
 
 cal -= 175
 
@@ -173,9 +173,11 @@ def getFoodList(table, Foodlist, vCategory, nvCategory, totCal):
 
     for item in foodDetails:
         # print(item['food'],item['cat'])
-        flist = dCat[item['cat']]
-        flist.append(item['food']) 
-        dCat[item['cat']] = flist 
+        cat = item['cat']
+        if cat in category:
+            flist = dCat[item['cat']]
+            flist.append(item['food']) 
+            dCat[item['cat']] = flist 
 
     # print(dCat)
     
@@ -200,7 +202,7 @@ def getFoodList(table, Foodlist, vCategory, nvCategory, totCal):
                     reqCal = reqCal + foodCal 
                     # print(reqCal)
                 else:
-                    break     
+                    break    
 
     # print()
     # print(sessionDetails)          
@@ -220,9 +222,9 @@ snackFoods = processDiet(snack_csv)
 dinnerFoods = processDiet(dinner_csv)
 
 breakfastList = getFoodList(breakfast_csv, breakfastFoods, bfVegCatList, bfNonVegCatList, int(cal/4))
-lunchList = getFoodList(lunch_csv, lunchFoods, lVegCatList, lNonVegCatList, int(3*cal/7))
+lunchList = getFoodList(lunch_csv, lunchFoods, lVegCatList, lNonVegCatList, int(cal/4))
 snackList = getFoodList(snack_csv, snackFoods, sVegCatList, sNonVegCatList, 175)
-dinnerList = getFoodList(dinner_csv, dinnerFoods, dVegCatList, dNonVegCatList, int(3*cal/7))
+dinnerList = getFoodList(dinner_csv, dinnerFoods, dVegCatList, dNonVegCatList, int(cal/4))
 
 
 dietplan = { "breakfast" : breakfastList, 

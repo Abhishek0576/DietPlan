@@ -1,0 +1,39 @@
+,Food,Measure,Grams,Calories,Protein,Fat,Fiber,Carbs,Category,Consumed by,Age(20-39),Age(40-59),Age(60-more)
+0,Cows' milk,1 qt.,976,660,32,40,0,48,Dairy products,"underweight, healthy",yes,yes,yes
+1,Milk skim,1 qt.,984,360,36,t,0,52,Dairy products,"healthy, overweight",yes,yes,yes
+2,Buttermilk,1 cup,246,127,9,5,0,13,Dairy products,"underweight, healthy, overweight",yes,yes,no
+3,Custard,1 cup,248,285,13,14,0,28,Dairy products,"underweight, healthy, overweight",yes,yes,yes
+4,Eggs raw,2,100,150,12,12,0,t,Eggs,"underweight, healthy, overweight",yes,yes,yes
+5,Eggs Scrambled or fried,2,128,220,13,16,0,1,Eggs,"underweight, healthy",yes,yes,no
+6,Yolks,2,34,120,6,10,0,t,Eggs,"underweight, healthy",yes,yes,no
+7,Bean sprouts,1 cup,50,17,1,t,0.3,3,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+8,Carrots,1 cup,150,45,1,t,0.9,10,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+9,Radishes,5 small,50,10,t,0,0.3,2,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+10,Soyabeans,1 cup,200,260,22,11,3.2,20,Vegetables,"underweight, healthy, overweight",yes,yes,yes
+11,Apples,1 med,130,70,t,t,1,18,Fruits,"underweight, healthy, overweight",yes,yes,yes
+12,Apricots,1 cup,250,220,2,t,1,57,Fruits,"underweight, healthy, overweight",yes,yes,yes
+13,Avocado,1/2 large,108,185,2,18,1.8,6,Fruits,"underweight, healthy, overweight",yes,yes,yes
+14,Banana,1 med.,150,85,1,t,0.9,23,Fruits,"underweight, healthy, overweight",yes,yes,yes
+15,Blackberries,1 cup,144,85,2,1,6.6,19,Fruits,"underweight, healthy, overweight",yes,yes,yes
+16,Blueberries,1 cup,250,245,1,t,2,65,Fruits,"underweight, healthy, overweight",yes,yes,yes
+17,Cherries,1 cup,257,100,2,1,2,26,Fruits,"underweight, healthy, overweight",yes,yes,yes
+18,Cranberry sauce sweetened,1 cup,277,530,t,t,1.2,142,Fruits,"underweight, healthy",yes,yes,yes
+19,Dates,1 cup,178,505,4,t,3.6,134,Fruits,"underweight, healthy, overweight",yes,yes,yes
+20,Grapes,1 cup,153,70,1,t,0.8,16,Fruits,"underweight, healthy, overweight",yes,yes,yes
+21,Olives large,10,65,72,1,10,0.8,3,Fruits,"underweight, healthy, overweight",yes,yes,yes
+22,Oranges, 1 med.,180,60,2,t,1,16,Fruits,"underweight, healthy, overweight",yes,yes,yes
+23,Orange juice,8 oz. or,250,112,2,t,0.2,25,Fruits,"underweight, healthy, overweight",yes,yes,yes
+24,Raisins,1/2 cup,88,230,2,t,0.7,82,Fruits,"underweight, healthy, overweight",yes,yes,yes
+25,Strawberries,1 cup,227,242,1,t,1.3,60,Fruits,"underweight, healthy, overweight",yes,yes,yes
+26,Biscuits,1,38,130,3,4,t,18,"Breads, cereals, fastfood,grains","underweight, healthy, overweight",yes,yes,yes
+27,Cornflakes,1 cup,25,110,2,t,0.1,25,"Breads, cereals, fastfood,grains","underweight, healthy, overweight",yes,yes,yes
+28,Macaroni,1 cup,140,155,5,1,0.1,32,"Breads, cereals, fastfood,grains","underweight, healthy",yes,yes,yes
+29,Noodles,1 cup,160,200,7,2,0.1,37,"Breads, cereals, fastfood,grains","underweight, healthy",yes,yes,yes
+30,Oatmeal,1 cup,236,150,5,3,4.6,26,"Breads, cereals, fastfood,grains","healthy, overweight",yes,yes,yes
+31,Almonds,1/2 cup,70,425,13,38,1.8,13,Seeds and Nuts,"underweight, healthy, overweight",yes,yes,yes
+32,Almonds roasted and salted,1/2 cup,70,439,13,40,1.8,13,Seeds and Nuts,"underweight, healthy, overweight",yes,yes,yes
+33,Brazil nuts,1/2 cup,70,457,10,47,2,7,Seeds and Nuts,"underweight, healthy, overweight",yes,yes,yes
+34,Peanuts,1/3 cup,50,290,13,25,1.2,9,Seeds and Nuts,"underweight, healthy, overweight",yes,yes,yes
+35,Walnuts,1/2 cup,50,325,7,32,1,8,Seeds and Nuts,"underweight, healthy, overweight",yes,yes,yes
+36,Coffee,1 cup,230,30,t,0,0,1,"Drinks,Alcohol, Beverages","underweight, healthy, overweight",yes,yes,yes
+37,Tea,1 cup,230,40,0,t,0,1,"Drinks,Alcohol, Beverages","underweight, healthy, overweight",yes,yes,yes

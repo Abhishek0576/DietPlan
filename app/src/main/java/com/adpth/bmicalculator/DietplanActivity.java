@@ -19,6 +19,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
@@ -48,8 +49,8 @@ public class DietplanActivity extends AppCompatActivity
     SegmentedGroup segmented;
     RadioButton btn_veg, btn_nonveg;
 
-    //public static final String BASE_URL = "http://fooddiet.epizy.com/index.php";
-    public static final String BASE_URL = "http://192.168.29.104/projectDietPlan/index.php";
+    public static final String BASE_URL = "https://webdietplan.000webhostapp.com/index.php/";
+    //public static final String BASE_URL = "http://192.168.29.104/projectDietPlan/index.php";
 
 
     public String getItems(JSONArray array)
@@ -90,6 +91,7 @@ public class DietplanActivity extends AppCompatActivity
                     {
                         try
                         {
+                            //tv_breakfastFood.setText(response);
                             JSONObject obj = new JSONObject(response);
 
                             JSONArray breakfastArray = obj.getJSONArray("breakfast");
