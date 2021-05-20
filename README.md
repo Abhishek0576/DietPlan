@@ -1,3 +1,14 @@
+Application Screens:
+
+![Uploading image.png…]()
+![Uploading image.png…]()
+![Uploading image.png…]()
+![Uploading image.png…]()
+![Uploading image.png…]()
+![Uploading image.png…]()
+![Uploading image.png…]()
+
+
 Project Description:
 1. This application takes 5 inputs - age, gender, height, weight and activity level of an individual.
 2. Based on above paramaters it makes two calculations - 
