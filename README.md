@@ -17,13 +17,14 @@ Guidelines:
       to 'http://localhost/projectDietPlan/index.php'
 
 
+
 Application Screens Images:
 
 <div style="margin: auto; width: 100%;">
-<img src="images/image1.jpg" height='500'>
-<img src="images/image2.jpg" height='500'>
-<img src="images/image3.jpg" height='500'>
-<img src="images/image4.jpg" height='500'>
-<img src="images/image6.jpg" height='500'>
-<img src="images/image7.jpg" height='500'>
+<img src="images/image1.jpg" height='600'>
+<img src="images/image2.jpg" height='600'>
+<img src="images/image3.jpg" height='600'>
+<img src="images/image4.jpg" height='600'>
+<img src="images/image6.jpg" height='600'>
+<img src="images/image7.jpg" height='600'>
 </div>
