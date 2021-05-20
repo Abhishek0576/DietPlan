@@ -18,6 +18,7 @@ Guidelines:
 
 
 Application Screens Images:
+<div style="float:right;">
 <img src="images/image1.jpg" height='600'>
 <img src="images/image2.jpg" height='600'>
 <img src="images/image3.jpg" height='600'>
@@ -25,3 +26,4 @@ Application Screens Images:
 <img src="images/image5.jpg" height='600'>
 <img src="images/image6.jpg" height='600'>
 <img src="images/image7.jpg" height='600'>
+<div>
