@@ -1,14 +1,3 @@
-Application Screens Images:
-
-<img src="images/image1.jpg" height='800'>
-<img src="images/image2.jpg" height='800'>
-<img src="images/image3.jpg" height='800'>
-<img src="images/image4.jpg" height='300'>
-<img src="images/image5.jpg" height='300'>
-<img src="images/image6.jpg" height='300'>
-<img src="images/image7.jpg" height='300'>
-
-
 Project Description:
 1. This application takes 5 inputs - age, gender, height, weight and activity level of an individual.
 2. Based on above paramaters it makes two calculations - 
@@ -26,3 +15,13 @@ Guidelines:
    a) Add the projectDietPlan folder into xampp/htdocs/
    b) Change the global variable "BASE_URL" value from 'https://webdietplan.000webhostapp.com/index.php/' 
       to 'http://localhost/projectDietPlan/index.php'
+
+
+Application Screens Images:
+<img src="images/image1.jpg" height='600'>
+<img src="images/image2.jpg" height='600'>
+<img src="images/image3.jpg" height='600'>
+<img src="images/image4.jpg" height='600'>
+<img src="images/image5.jpg" height='600'>
+<img src="images/image6.jpg" height='600'>
+<img src="images/image7.jpg" height='600'>
