@@ -17,7 +17,7 @@
       to 'http://localhost/projectDietPlan/index.php'
 
 
-# Application Screens Images:
+# Application Screenshots:
 
 <div style="float:left; margin: auto; width: 100%;">
 <img src="images/image1.jpg" height='525'>
