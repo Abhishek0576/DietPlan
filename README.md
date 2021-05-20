@@ -18,11 +18,11 @@ Guidelines:
 
 
 Application Screens Images:
-<div style="float:right;">
-<img src="images/image1.jpg" height='600' style="margin:20px;">
-<img src="images/image2.jpg" height='600' style="margin:20px;">
-<img src="images/image3.jpg" height='600' style="margin:20px;">
-<img src="images/image4.jpg" height='600' style="margin:20px;">
-<img src="images/image6.jpg" height='600' style="margin:20px;">
-<img src="images/image7.jpg" height='600' style="margin:20px;">
+<div style="float:right; margin:auto; width: 50%; border: 3px solid green; padding: 10px;">
+<img src="images/image1.jpg" height='600'>
+<img src="images/image2.jpg" height='600'>
+<img src="images/image3.jpg" height='600'>
+<img src="images/image4.jpg" height='600'>
+<img src="images/image6.jpg" height='600'>
+<img src="images/image7.jpg" height='600'>
 <div>
