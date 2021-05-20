@@ -19,10 +19,7 @@ Guidelines:
 
 Application Screens Images:
 
-<div style="margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;">
+<div style="margin: auto; width: 100%;">
 <img src="images/image1.jpg" height='500'>
 <img src="images/image2.jpg" height='500'>
 <img src="images/image3.jpg" height='500'>
