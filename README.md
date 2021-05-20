@@ -18,6 +18,7 @@ Guidelines:
 
 
 Application Screens Images:
+
 <img src="images/image1.jpg" height='500'>
 <img src="images/image2.jpg" height='500'>
 <img src="images/image3.jpg" height='500'>
