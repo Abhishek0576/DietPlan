@@ -20,6 +20,7 @@ Guidelines:
 
 Application Screens Images:
 
+
 <div style="float:left; margin: auto; width: 100%;">
 <img src="images/image1.jpg" height='500'>
 <img src="images/image2.jpg" height='500'>
