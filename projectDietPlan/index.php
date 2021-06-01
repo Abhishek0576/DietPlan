@@ -8,6 +8,7 @@ $cal = $_POST['BMR'];
 $foodtype = $_POST['type'];
 
 $cal = $cal - 175;
+$scal = 175;
 
 $bfVegCatList    = array('Dairy products', 'Drinks, Alcohol, Beverages', 'Fruits' , 'Seeds and Nuts', 'Breads, cereals, fastfood,grains' );
 $bfNonVegCatList = array('Dairy products', 'Eggs', 'Drinks, Alcohol, Beverages', 'Fruits', 'Seeds and Nuts', 'Breads, cereals, fastfood,grains' );            
@@ -21,7 +22,7 @@ $dNonVegCatList  = array('Breads, cereals, fastfood,grains', 'Meat, Poultry', 'V
 
 function intersection($list1, $list2) 
 {
-    return (array_merge($list1, $list2));
+    return (array_intersect($list1, $list2));
 }
 
 
@@ -42,10 +43,6 @@ function getFoodList($table)
     global $cal; 
 
     $handle = fopen($table, "r");
-    if($foodtype == "veg")
-    {
-        $table = 'veg'.$table; 
-    }   
     
     $underwtFoods = array();
     $healthyFoods = array();
@@ -71,9 +68,9 @@ function getFoodList($table)
            if(strpos($consumedBy,"healthy") !== false)      array_push($healthyFoods, $foodItem); 
            if(strpos($consumedBy,"overweight") !== false)   array_push($overwtFoods, $foodItem); 
 
-           if(strcmp("yes",$ageGroup1))  array_push($age_grp1Foods, $foodItem); 
-           if(strcmp("yes",$ageGroup2))  array_push($age_grp2Foods, $foodItem); 
-           if(strcmp("yes",$ageGroup3))  array_push($age_grp3Foods, $foodItem);  
+           if(strcmp("yes",$ageGroup1) == 0)  array_push($age_grp1Foods, $foodItem); 
+           if(strcmp("yes",$ageGroup2) == 0)  array_push($age_grp2Foods, $foodItem); 
+           if(strcmp("yes",$ageGroup3) == 0)  array_push($age_grp3Foods, $foodItem);  
 
         }
         $row += 1;   
@@ -93,28 +90,28 @@ function getFoodList($table)
 
     $Foodlist = '';
 
-    if(strcmp($ageGroup,"AgeGroup-1(20-39)"))
+    if(strcmp($ageGroup,"AgeGroup-1(20-39)") == 0)
     {
         if(strcmp($wtGroup, "Underweight") == 0)     $Foodlist = $underwt_agegrp1Foods;
         else if(strcmp($wtGroup, "Normal") == 0)     $Foodlist = $healthy_agegrp1Foods;
         else if(strcmp($wtGroup, "Overweight") == 0) $Foodlist = $overwt_agegrp1Foods;
     }
 
-    else if(strcmp($ageGroup,"AgeGroup-2(20-39)"))
+    else if(strcmp($ageGroup,"AgeGroup-2(40-59)") == 0)
     {
         if(strcmp($wtGroup, "Underweight") == 0)     $Foodlist = $underwt_agegrp2Foods;
         else if(strcmp($wtGroup, "Normal") == 0)     $Foodlist = $healthy_agegrp2Foods;  
         else if(strcmp($wtGroup, "Overweight") == 0) $Foodlist = $overwt_agegrp2Foods;
     }
 
-    else if(strcmp($ageGroup,"AgeGroup-3(20-39)"))
+    else if(strcmp($ageGroup,"AgeGroup-3(60-more)") == 0)
     {
         if(strcmp($wtGroup, "Underweight") == 0)     $Foodlist = $underwt_agegrp3Foods;
         else if(strcmp($wtGroup, "Normal") == 0)     $Foodlist = $healthy_agegrp3Foods;
         else if(strcmp($wtGroup, "Overweight") == 0) $Foodlist = $overwt_agegrp3Foods;
     }
 
-    return $Foodlist;
+    return $underwt_agegrp2Foods;
 
     fclose($handle);
       
@@ -130,7 +127,7 @@ function processDiet($table, $Foodlist, $vCategory, $nvCategory, $totCal)
     $handle = fopen($table, "r");
     if($foodtype == "veg")
     {
-        $table = 'veg'.$table; 
+        //$table = 'veg'.$table; 
         $category = $vCategory;
     }
     else 
@@ -253,7 +250,7 @@ $dinnerFoods = getFoodList($dinner_csv);
 
 $breakfastList = processDiet($breakfast_csv, $breakfastFoods, $bfVegCatList, $bfNonVegCatList, (int)($cal/4));
 $lunchList     = processDiet($lunch_csv,     $lunchFoods,     $lVegCatList,  $lNonVegCatList,  (int)(3*$cal/7));
-$snackList     = processDiet($snack_csv,     $snackFoods,     $sVegCatList,  $sNonVegCatList,  175);
+$snackList     = processDiet($snack_csv,     $snackFoods,     $sVegCatList,  $sNonVegCatList,  $scal);
 $dinnerList    = processDiet($dinner_csv,    $dinnerFoods,    $dVegCatList,  $dNonVegCatList,  (int)(3*$cal/7));
 
 $dietplan = array();
@@ -265,5 +262,6 @@ $dietplan["dinner"] = $dinnerList;
 
 $JSON_Data = json_encode($dietplan);
 echo $JSON_Data;
+
 
 ?>
