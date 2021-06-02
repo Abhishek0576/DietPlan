@@ -111,10 +111,9 @@ function getFoodList($table)
         else if(strcmp($wtGroup, "Overweight") == 0) $Foodlist = $overwt_agegrp3Foods;
     }
 
-    return $underwt_agegrp2Foods;
-
     fclose($handle);
-      
+    
+    return $Foodlist;
 }
 
 function processDiet($table, $Foodlist, $vCategory, $nvCategory, $totCal)
