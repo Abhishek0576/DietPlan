@@ -108,9 +108,9 @@ public class DietplanActivity extends AppCompatActivity
                             String dTimings  = "08:30 PM  -  10:00 PM";
 
                             String bfcalInfo = "Total Calories: \t"+Math.round(totalCal/4)+" cal \n\n";
-                            String lcalInfo = "Total Calories: \t"+Math.round(3*totalCal/7)+" cal \n\n";
-                            String scalInfo = "Total Calories: \t"+175+" cal \n\n";
-                            String dcalInfo = "Total Calories: \t"+Math.round(3*totalCal/7)+" cal \n\n";
+                            String lcalInfo  = "Total Calories: \t"+Math.round(totalCal/2)+" cal \n\n";
+                            String scalInfo  = "Total Calories: \t"+175+" cal \n\n";
+                            String dcalInfo  = "Total Calories: \t"+Math.round(totalCal/4)+" cal \n\n";
 
                             tv_breakfastFood.setText(bfTimings+"\n\n\n"+bfcalInfo);
                             tv_breakfastFood.append(getItems(breakfastArray));

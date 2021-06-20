@@ -17,4 +17,8 @@
     <string name="your_result">Your Result</string>
     <string name="your_age">Your Age</string>
     <string name="cm">cm</string>
+    <string name="dietplan">Diet Plan</string>
+    <string name="aarogyasetu">Aarogya Setu</string>
+    <string name="chat">Chat</string>
+    <string name="camera">Camera</string>
 </resources>

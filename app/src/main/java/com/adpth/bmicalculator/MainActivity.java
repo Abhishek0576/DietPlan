@@ -206,7 +206,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             Toast.makeText(MainActivity.this,"Select gender", Toast.LENGTH_SHORT).show();
             return;
         }
-
+        if(count_age<20)
+        {
+            Toast.makeText(MainActivity.this,"Select age above or equal to 20", Toast.LENGTH_SHORT).show();
+            return;
+        }
         float BMI = count_weight / (height * height);
 
         String weightGroup = null;
@@ -244,7 +248,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         else if(count_age >= 60){
             ageGroup = "AgeGroup - 3  ( 60 - more )";
         }
-
         Intent intent = new Intent(MainActivity.this,ResultActivity.class);
         intent.putExtra("BMI",BMI);
         intent.putExtra("BMR",BMR);
