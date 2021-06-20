@@ -7,17 +7,32 @@ $wtGroup = $_POST['weightGroup'];
 $cal = $_POST['BMR']; 
 $foodtype = $_POST['type'];
 
+if(!isset($cal) && !isset($ageGroup) && !isset($wtGroup) && !isset($foodtype)) 
+{
+    echo "<html> <head> <title> Diet Plan </title> </head>";
+    echo "<body style='background: #eee'>";
+    echo "<center>";
+    echo "<br>";
+    echo "<h2> \"Diet Plan Recommendation System\" </h2> <br><br>"; 
+    echo "<label> Click below button to download <b> Diet Plan Zip </b> file and extract apk </label>";
+    echo "<h1> <button> <a href='/DietPlan.zip'> <img src='/download-apk.png' /> </a> </button> </h1>";
+    echo "</center>";
+    echo "</body>";
+    echo "</html>";
+    exit();
+}
+
 $cal = $cal - 175;
 $scal = 175;
 
-$bfVegCatList    = array('Dairy products', 'Drinks, Alcohol, Beverages', 'Fruits' , 'Seeds and Nuts', 'Breads, cereals, fastfood,grains' );
-$bfNonVegCatList = array('Dairy products', 'Eggs', 'Drinks, Alcohol, Beverages', 'Fruits', 'Seeds and Nuts', 'Breads, cereals, fastfood,grains' );            
+$bfVegCatList    = array('Dairy products', 'Fruits' , 'Seeds and Nuts', 'Breads, cereals, fastfood,grains' );
+$bfNonVegCatList = array('Dairy products', 'Eggs',  'Fruits', 'Seeds and Nuts', 'Breads, cereals, fastfood,grains' );  
 $lVegCatList     = array('Breads, cereals, fastfood,grains', 'Soups', 'Dairy products', 'Vegetables' );
 $lNonVegCatList  = array('Breads, cereals, fastfood,grains', 'Soups', 'Dairy products', 'Meat, Poultry', 'Fish, Seafood', 'Eggs','Vegetables' );
 $sVegCatList     = array('Breads, cereals, fastfood,grains', 'Drinks,Alcohol, Beverages', 'Fruits', 'Desserts, sweets', 'Dairy products', 'Vegetables' );
 $sNonVegCatList  = array('Breads, cereals, fastfood,grains', 'Eggs', 'Drinks,Alcohol, Beverages', 'Fruits', 'Desserts, sweets', 'Dairy products', 'Vegetables' );
-$dVegCatList     = array('Breads, cereals, fastfood,grains', 'Vegetables', 'Desserts, sweets' );
-$dNonVegCatList  = array('Breads, cereals, fastfood,grains', 'Meat, Poultry', 'Vegetables', 'Desserts, sweets' );
+$dVegCatList     = array('Breads, cereals, fastfood,grains', 'Soups', 'Vegetables', 'Desserts, sweets' );
+$dNonVegCatList = array('Breads, cereals, fastfood,grains', 'Soups', 'Meat, Poultry', 'Vegetables', 'Desserts, sweets' );
 
 
 function intersection($list1, $list2) 
@@ -114,6 +129,7 @@ function getFoodList($table)
     fclose($handle);
     
     return $Foodlist;
+      
 }
 
 function processDiet($table, $Foodlist, $vCategory, $nvCategory, $totCal)
@@ -126,7 +142,6 @@ function processDiet($table, $Foodlist, $vCategory, $nvCategory, $totCal)
     $handle = fopen($table, "r");
     if($foodtype == "veg")
     {
-        //$table = 'veg'.$table; 
         $category = $vCategory;
     }
     else 
@@ -141,12 +156,12 @@ function processDiet($table, $Foodlist, $vCategory, $nvCategory, $totCal)
     $foodDetails = array();
     $row = 0;
 
-    for($i=0; $i<count($Foodlist); $i++)
+    $row = 0;
+    while(($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
     {
-        $row = 0;
-        while(($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
+        for($i=0; $i<count($Foodlist); $i++)
         {
-            if(strcmp($data[0], $Foodlist[$i]) && $row != 0)
+            if(strcmp($data[0], $Foodlist[$i]) == 0 && $row != 0)
             {
                 $food = $data[0];
                 $cal = $data[3];
@@ -165,11 +180,10 @@ function processDiet($table, $Foodlist, $vCategory, $nvCategory, $totCal)
                
                 array_push($foodDetails, $temp);
             }
-            $row++;    
         }
+        $row++;
     }
     
-    // print_r($foodDetails);
 
     $dCat = array();
     for($i=0; $i<count($category); $i++)
@@ -196,14 +210,10 @@ function processDiet($table, $Foodlist, $vCategory, $nvCategory, $totCal)
         {
             $random_key = array_rand($catList);
             $random_food = $catList[$random_key];
-            //echo $random_food."<br>";
             array_push($sesssionFood, $random_food);
         }
     }
 
-    //print_r($sesssionFood);
-
-    //echo "<br><br>";
 
     $sessionDetails = array() ;
 
@@ -222,7 +232,6 @@ function processDiet($table, $Foodlist, $vCategory, $nvCategory, $totCal)
                 if($reqCal + $itemCal <= $totCal)
                 {
                     array_push($sessionDetails, $itemDetails);
-                    //echo $reqCal."<br>";
                     $reqCal += $itemCal;
                 }
                 else
@@ -248,9 +257,9 @@ $snackFoods = getFoodList($snack_csv);
 $dinnerFoods = getFoodList($dinner_csv);
 
 $breakfastList = processDiet($breakfast_csv, $breakfastFoods, $bfVegCatList, $bfNonVegCatList, (int)($cal/4));
-$lunchList     = processDiet($lunch_csv,     $lunchFoods,     $lVegCatList,  $lNonVegCatList,  (int)(3*$cal/7));
+$lunchList     = processDiet($lunch_csv,     $lunchFoods,     $lVegCatList,  $lNonVegCatList,  (int)($cal/2));
 $snackList     = processDiet($snack_csv,     $snackFoods,     $sVegCatList,  $sNonVegCatList,  $scal);
-$dinnerList    = processDiet($dinner_csv,    $dinnerFoods,    $dVegCatList,  $dNonVegCatList,  (int)(3*$cal/7));
+$dinnerList    = processDiet($dinner_csv,    $dinnerFoods,    $dVegCatList,  $dNonVegCatList,  (int)($cal/4));
 
 $dietplan = array();
 
